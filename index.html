@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Rekrutmen Saka Wira Kartika</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- AUDIO -->
+<audio id="ambient" src="audio/ambient.mp3" loop></audio>
+<audio id="clickSound" src="audio/click.mp3"></audio>
+<audio id="hoverSound" src="audio/hover.mp3"></audio>
+
+<!-- HERO -->
+<section class="hero">
+  <!-- FOTO BACKGROUND -->
+  <div class="hero-bg"></div>
+
+  <!-- PARALLAX LAYER (OPSIONAL, TETAP ADA) -->
+  <div class="parallax back"></div>
+  <div class="parallax mid"></div>
+  <div class="parallax front"></div>
+
+  <div class="hero-text">
+    <h1>Saka Wira Kartika</h1>
+    <p>Membentuk Generasi Tangguh, Disiplin, dan Cinta Tanah Air</p>
+    <a href="#daftar" class="btn">Daftar Sekarang</a>
+  </div>
+</section>
+
+
+<!-- TENTANG SAKA -->
+<section class="section" id="tentang">
+  <h2>Tentang Saka Wira Kartika</h2>
+
+  <div class="tentang-wrapper">
+    <!-- FOTO -->
+    <div class="tentang-foto">
+      <img src="apa itu.JPG" alt="Kegiatan Saka Wira Kartika">
+    </div>
+
+    <!-- CARD -->
+    <div class="tentang-card">
+      <h3>Profil Singkat</h3>
+      <p>
+        Saka Wira Kartika adalah Satuan Karya Pramuka yang berada di bawah
+        pembinaan Tentara Nasional Indonesia Angkatan Darat (TNI AD).
+        Saka ini bertujuan membina generasi muda agar memiliki jiwa
+        kepemimpinan, disiplin, keterampilan lapangan, dan semangat bela negara.
+      </p>
+
+      <p>
+        Melalui berbagai latihan dan kegiatan lapangan, anggota dibekali
+        kemampuan fisik, mental, serta karakter kebangsaan yang kuat
+        sebagai calon generasi penerus bangsa.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- VISI MISI -->
+<section class="section dark">
+  <h2>Visi & Misi</h2>
+
+  <div class="vm-cards">
+    <div class="vm-card">
+      <h3>Visi</h3>
+      <p>
+        Terwujudnya generasi muda Pramuka yang tangguh, 
+        berkarakter, disiplin, dan berjiwa nasionalisme,
+         serta mampu menjadi teladan dalam kehidupan bermasyarakat, berbangsa, dan bernegara.
+      </p>
+    </div>
+
+    <div class="vm-card">
+      <h3>Misi</h3>
+      <ul>
+        <li>Menanamkan nilai Pancasila dan cinta tanah air</li>
+        <li>Membentuk disiplin dan kepemimpinan</li>
+        <li>Membekali keterampilan lapangan</li>
+        <li>Mengembangkan fisik dan mental</li>
+        <li>Mencetak generasi bela negara</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>5 Krida Saka Wira Kartika</h2>
+
+  <div class="krida-container">
+
+    <div class="krida-card" data-img="img/krida1.jpg">
+      <div class="krida-img">
+        <img src="navigasi d.jpeg" alt="Krida Navigasi Darat">
+      </div>
+      <div class="krida-content">
+        <span class="badge">Krida</span>
+        <h3>Navigasi Darat</h3>
+        <p>melatih kemampuan menentukan posisi dan arah perjalanan menggunakan peta serta kompas</p>
+      </div>
+    </div>
+
+    <div class="krida-card" data-img="img/krida2.jpg">
+      <div class="krida-img">
+        <img src="mounte,.JPG" alt="Krida Ketahanan">
+      </div>
+      <div class="krida-content">
+        <span class="badge">Krida</span>
+        <h3>Mountering</h3>
+        <p>kecakapan yang melatih keterampilan teknis mendaki, navigasi medan, dan ketahanan mental</p>
+      </div>
+    </div>
+
+    <div class="krida-card" data-img="img/krida3.jpg">
+      <div class="krida-img">
+        <img src="krida pio.jpg" alt="Krida Pionering">
+      </div>
+      <div class="krida-content">
+        <span class="badge">Krida</span>
+        <h3>Pionering</h3>
+        <p>melatih kemahiran tali-temali untuk membangun sarana prasarana darurat yang fungsional dan kokoh</p>
+      </div>
+    </div>
+
+    <div class="krida-card" data-img="img/krida4.jpg">
+      <div class="krida-img">
+        <img src="survival.jpeg" alt="Krida Kepemimpinan">
+      </div>
+      <div class="krida-content"></div>
+        <span class="badge">Krida</span>
+        <h3>survival</h3>
+        <p>melatih kemampuan bertahan hidup dalam kondisi darurat di alam bebas dengan memanfaatkan sumber daya alam</p>
+      </div>
+    </div>
+
+    <div class="krida-card" data-img="img/krida5.jpg">
+      <div class="krida-img">
+        <img src="pbz.JPG" alt="Krida Bela Negara">
+      </div>
+      <div class="krida-content">
+        <span class="badge">Krida</span>
+        <h3>Penangulangan Bencana Alam</h3>
+        <p>melatih kesiapsiagaan, kecepatan bertindak, dan keterampilan teknis dalam menyelamatkan korban serta meminimalkan dampak kerusakan saat terjadi bencana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AKSI LAPANGAN -->
+<section class="section dark" id="aksi">
+  <h2>Aksi di Lapangan</h2>
+  <p class="subtitle">
+    Dokumentasi kegiatan dan latihan lapangan Saka Wira Kartika
+  </p>
+
+  <div class="aksi-grid">
+    <div class="aksi-card">
+      <img src="baris berbaris.jpeg" alt="Latihan Lapangan">
+      <div class="aksi-desc">
+        <h4>Latihan Ketahanan Fisik</h4>
+        <p>
+          Kegiatan pembinaan fisik dan mental untuk melatih daya tahan,
+          disiplin, serta kerja sama antar anggota.
+        </p>
+      </div>
+    </div>
+
+    <div class="aksi-card">
+      <img src="latihan.JPG" alt="Latihan Navigasi">
+      <div class="aksi-desc">
+        <h4>Latihan Navigasi Darat</h4>
+        <p>
+          Simulasi membaca peta, kompas, dan orientasi medan
+          sebagai bekal keterampilan lapangan.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEUTAMAAN & BENEFIT -->
+<section class="section" id="benefit">
+  <h2>Keutamaan & Manfaat Bergabung</h2>
+
+  <div class="benefit-grid">
+    <div class="benefit-card">
+      <h3>Pembinaan Karakter</h3>
+      <p>
+        Membentuk pribadi yang disiplin, bertanggung jawab,
+        dan memiliki jiwa kepemimpinan sejak dini.
+      </p>
+    </div>
+
+    <div class="benefit-card">
+      <h3>Keterampilan Lapangan</h3>
+      <p>
+        Mendapatkan pengetahuan navigasi, pionering,
+        survival, dan dasar bela negara.
+      </p>
+    </div>
+
+    <div class="benefit-card">
+      <h3>Fisik & Mental Tangguh</h3>
+      <p>
+        Melatih ketahanan fisik, mental, serta kepercayaan diri
+        melalui latihan dan kegiatan lapangan.
+      </p>
+    </div>
+
+    <div class="benefit-card">
+      <h3>Pengalaman & Relasi</h3>
+      <p>
+        Menambah pengalaman organisasi, jaringan pertemanan,
+        dan kesempatan mengikuti kegiatan tingkat daerah maupun nasional.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PENDAFTARAN -->
+<section class="section" id="daftar">
+  <h2>Pendaftaran</h2>
+  <p>Siap bergabung bersama kami?</p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtIUOzTSuODar02wtfDrZOOwhZVjx4GFFYLvCjPirk5OK3yg/viewform?usp=publish-editor" target="_blank" class="btn big">
+    Formulir Pendaftaran
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Dibina oleh TNI Angkatan Darat</p>
+  <p>© Saka Wira Kartika</p>
+</footer>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+  <span id="close">✕</span>
+  <img id="popupImg">
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
